@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+	<script src="{{ url_for('static', filename='main.js') }}"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<title>Dashboard</title>
+</head>
+<body>
+	<h3>Total number of incoming requests</h3>
+	<div id="req-per-sec" style="height: 300px; width: 100%;"></div>
+	<hr>
+	<h4>Instance 1</h4>
+	<div id="req-per-sec-i1" style="height: 300px; width: 100%;"></div>
+	<hr>
+	<h4>Instance 2</h4>
+	<div id="req-per-sec-i2" style="height: 300px; width: 100%;"></div>
+	<hr>
+	<h4>Instance 3</h4>
+	<div id="req-per-sec-i3" style="height: 300px; width: 100%;"></div>
+	<hr>
+	<h4>Instance 4</h4>
+	<div id="req-per-sec-i4" style="height: 300px; width: 100%;"></div>
+	<hr>
+	<h4>Instance 5</h4>
+	<div id="req-per-sec-i5" style="height: 300px; width: 100%;"></div>
+</body>
+</html>
