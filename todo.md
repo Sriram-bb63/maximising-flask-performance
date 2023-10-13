@@ -6,3 +6,6 @@
 - [ ] Add more intensive CPU bound task
 - [ ] Add more intensive IO bound task
 - [ ] Add time bound task
+- [ ] Code refactor load_balancer.py
+- [ ] Command line arguments for load_balancer.py
+- [ ] Add "how to run" 
