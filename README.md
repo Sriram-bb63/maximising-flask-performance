@@ -7,13 +7,13 @@
 - Time period: 1 minute
 ## Result
 
-|                                                | Requests/sec | Failures/sec |
-|------------------------------------------------|--------------|--------------|
-| Single instance                                | 164.3        | 1.4          |
-| Reverse proxy (Random)                         | 79.7         | 4.5          |
-| Reverse proxy (Cyclic)                         | 68.8         | 3.7          |
-| Gunicorn (5 workers [Recommended for 2 cores]) | 271.8        | 0.0          |
-| Gunicorn (10 workers [2x recommended value])   | 223.8        | 0.0          |
+|                                                | Total requests | Requests/sec | Failures/sec |
+|------------------------------------------------|----------------|--------------|--------------|
+| Single instance                                | 9871           | 164.3        | 1.4          |
+| Load balancer (Random URL)                     | 4788           | 79.7         | 4.5          |
+| Load balancer (Cyclic URL)                     | 4125           | 68.8         | 3.7          |
+| Gunicorn (5 workers [Recommended for 2 cores]) | 16335          | 271.8        | 0.0          |
+| Gunicorn (10 workers [2x recommened value])    | 13443          | 223.8        | 0.0          |
 
 ## Detailed reports
 
