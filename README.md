@@ -5,7 +5,7 @@
 - Max concurrent users: 1000
 - User spawn rate: 100
 - Time period: 1 minute
-## Data
+## Result
 
 |                                                | Requests/sec | Failures/sec |
 |------------------------------------------------|--------------|--------------|
@@ -17,8 +17,8 @@
 
 ## Detailed reports
 
-- [Single instance](reports/single-instance.html)
-- [Reverse proxy (Random)](reports/reverse-proxy-random.html)
-- [Reverse proxy (Cyclic)](reports/reverse-proxy-cyclic.html)
-- [Gunicorn (5 workers [Recommended for 2 cores])](reports/gunicorn-5w.html)
-- [Gunicorn (10 workers [2x recommended workers])](reports/gunicorn-10w.html)
+- [Single instance](reports/single-instance.pdf)
+- [Reverse proxy (Random)](reports/reverse-proxy-random.pdf)
+- [Reverse proxy (Cyclic)](reports/reverse-proxy-cyclic.pdf)
+- [Gunicorn (5 workers [Recommended for 2 cores])](reports/gunicorn-5w.pdf)
+- [Gunicorn (10 workers [2x recommended workers])](reports/gunicorn-10w.pdf)
