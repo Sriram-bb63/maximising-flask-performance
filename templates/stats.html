@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Balancer Stats</title>
+</head>
+<body>
+    <div id="stats_graph"></div>
+    {{ graphJSON }}
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        var graphJSON = {{ graphJSON | safe }};
+        Plotly.newPlot('stats_graph', graphJSON);
+    </script>
+</body>
+</html>
