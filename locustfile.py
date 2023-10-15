@@ -1,6 +1,6 @@
 from locust import HttpUser, task
 
-PORT = 5000
+PORT = 8000
 URL = f"http://localhost:{PORT}"
 
 class MyUser(HttpUser):

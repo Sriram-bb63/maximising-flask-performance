@@ -9,3 +9,5 @@
 - [ ] Code refactor load_balancer.py
 - [ ] Command line arguments for load_balancer.py
 - [ ] Add "how to run" 
+- [ ] Expand to FastAPI, Springboot etc
+- [ ] Test with different types of workers
