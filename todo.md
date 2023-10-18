@@ -8,6 +8,8 @@
 - [ ] Add time bound task
 - [ ] Code refactor load_balancer.py
 - [ ] Command line arguments for load_balancer.py
-- [ ] Add "how to run" 
-- [ ] Expand to FastAPI, Springboot etc
+- [x] Add "how to run" 
 - [ ] Test with different types of workers
+- [ ] Add GIFs to [maximising-flask-performance.md](maximising-flask-performance.md)
+- [ ] Explore Nginx
+- [ ] Add architecture diagram for different cases
