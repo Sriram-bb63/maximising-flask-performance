@@ -13,3 +13,4 @@
 - [ ] Add GIFs to [maximising-flask-performance.md](maximising-flask-performance.md)
 - [ ] Explore Nginx
 - [ ] Add architecture diagram for different cases
+- [ ] Test with nginx reverse proxy
