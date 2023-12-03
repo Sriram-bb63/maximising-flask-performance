@@ -15,9 +15,3 @@ class MyUser(HttpUser):
     @task
     def io_bound_task(self):
         self.client.get("/io-bound")
-
-"""
-500
-10
-2min
-"""

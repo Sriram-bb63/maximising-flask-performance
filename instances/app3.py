@@ -1,10 +1,19 @@
 import math
-from flask import Flask, jsonify
 import os
 import sqlite3
-import requests
+
+from dotenv import load_dotenv
+from flask import Flask, jsonify
+from flask_ujson import UJSON
+
+load_dotenv()
+USE_UJSON = int(os.environ.get("USE_UJSON"))
 
 app = Flask(__name__)
+if USE_UJSON == 1:
+    ultra_json = UJSON()
+    ultra_json.init_app(app)
+
 
 @app.route('/')
 def get_info():
@@ -35,7 +44,33 @@ def io_bound_task():
     conn.close()
     return jsonify({"pid": pid, "result": results})
 
-    
+@app.route("/get-json", methods=["GET"])
+def get_json():
+    pid = os.getpid()
+    return {
+        "pid": pid,
+        "glossary": {
+            "title": "example glossary",
+            "GlossDiv": {
+                "title": "S",
+                "GlossList": {
+                    "GlossEntry": {
+                        "ID": "SGML",
+                        "SortAs": "SGML",
+                        "GlossTerm": "Standard Generalized Markup Language",
+                        "Acronym": "SGML",
+                        "Abbrev": "ISO 8879:1986",
+                        "GlossDef": {
+                            "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                            "GlossSeeAlso": ["GML", "XML"]
+                        },
+                        "GlossSee": "markup"
+                    }
+                }
+            }
+        }
+    }
+
 
 if __name__ == "__main__":
     app.run(port=5003)

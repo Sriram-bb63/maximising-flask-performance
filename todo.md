@@ -14,3 +14,9 @@
 - [ ] Add architecture diagram for different cases
 - [ ] Test with nginx
 - [ ] Test with HAProxy
+- [ ] Test with different json libraries
+    - [ ] UJSON
+    - [ ] ORJSON
+    - [ ] SimpleJSON
+    - [ ] RapidJSON
+    - [ ] JSON
